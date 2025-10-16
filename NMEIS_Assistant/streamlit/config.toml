@@ -1,0 +1,25 @@
+[global]
+showWarningOnDirectExecution = true
+level = "debug"
+magicEnabled = true
+
+[runner]
+folderWatchBlacklist = ['']
+headless = true
+liveSave = false
+runOnSave = false
+port = 80
+enableCORS = false
+
+[browser]
+serverAddress = "0.0.0.0"
+gatherUsageStats = true
+serverPort = 80
+
+[theme]
+base="dark"
+primaryColor="#ff4b4b"
+backgroundColor="#0e1117"
+secondaryBackgroundColor="#262730"
+textColor="#fafafa"
+font = "sans serif"
