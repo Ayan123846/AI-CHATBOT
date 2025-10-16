@@ -73,7 +73,8 @@ for path in instruction_file_paths:
     system_instructions += get_real_time_info()
 
 #GOOGLE_API_KEY = ('AIzaSyDCRGF-WOwm2fNARw6ZQR7WY1ZfOZMr5Go')
-GOOGLE_API_KEY = ('AIzaSyDs6j7qFgdinhFJyzLaCGElsKS8UWy9_6w')
+#GOOGLE_API_KEY = ('AIzaSyDs6j7qFgdinhFJyzLaCGElsKS8UWy9_6w')
+GOOGLE_API_KEY = ('AIzaSyAuZ2cSCMOdjkwRZ20bfcII1mFI2uGCGtM')
 
 # Configure generation settings
 generation_config = {
