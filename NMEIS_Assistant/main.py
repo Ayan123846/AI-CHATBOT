@@ -113,7 +113,7 @@ try:
         generation_config=generation_config,
         system_instruction=system_instructions,)
 except Exception as e:
-    st.error("Hang tight! We're sorting out an issue. Please try again soon!")
+    st.error("We're experiencing a hiccup. Don't worry, we're working to fix it. Please try again shortly!")
 
 
 # Function to translate roles between Gemini-Pro and Streamlit terminology
@@ -129,7 +129,7 @@ if "chat_session" not in st.session_state:
     try:
         st.session_state.chat_session = model.start_chat(history=[])
     except Exception as e:
-        st.error("We're experiencing a hiccup. Don't worry, we're working to fix it. Please try again shortly!")
+        st.error("Hang tight! We're sorting out an issue. Please try again soon!")
 
 # Add school logo above the title, centered
 school_logo_path = 'NMEIS_Assistant/nmeis.png'
