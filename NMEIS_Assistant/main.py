@@ -108,7 +108,7 @@ safety_settings = [
 try:
     gen_ai.configure(api_key=GOOGLE_API_KEY)
     model = gen_ai.GenerativeModel(
-        model_name="gemini-1.5-pro-latest",
+        model_name="gemini-2.5",
         safety_settings=safety_settings,
         generation_config=generation_config,
         system_instruction=system_instructions,)
