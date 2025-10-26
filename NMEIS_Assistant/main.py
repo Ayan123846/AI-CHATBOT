@@ -106,7 +106,7 @@ safety_settings = [
 try:
     gen_ai.configure(api_key=GOOGLE_API_KEY)
     model = gen_ai.GenerativeModel(
-        model_name="gemini-2.5-flash",
+        model_name="gemini-2.5-flash-native-audio-dialog",
         safety_settings=safety_settings,
         generation_config=generation_config,
         system_instruction=system_instructions,)
@@ -240,4 +240,4 @@ if user_prompt:
             pass
 
     except Exception as e:
-        st.error("Hang tight! We're sorting out an issue. Please try again soon!", {e})
+        st.error(f"We're experiencing a hiccup. Don't worry, we're working to fix it. Please try again shortly! \n {e}")
