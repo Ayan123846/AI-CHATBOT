@@ -72,9 +72,7 @@ for path in instruction_file_paths:
     # Append real-time information to the system instructions
     system_instructions += get_real_time_info()
 
-#GOOGLE_API_KEY = ('AIzaSyDCRGF-WOwm2fNARw6ZQR7WY1ZfOZMr5Go')
-#GOOGLE_API_KEY = ('AIzaSyDs6j7qFgdinhFJyzLaCGElsKS8UWy9_6w')
-GOOGLE_API_KEY = ('AIzaSyAuZ2cSCMOdjkwRZ20bfcII1mFI2uGCGtM')
+GOOGLE_API_KEY = ('AIzaSyDTmKQ9-HEFdA45xRFcSj9_JdOCcglknz8')
 
 # Configure generation settings
 generation_config = {
@@ -108,7 +106,7 @@ safety_settings = [
 try:
     gen_ai.configure(api_key=GOOGLE_API_KEY)
     model = gen_ai.GenerativeModel(
-        model_name="gemini-2.5",
+        model_name="gemini-2.5-flash-native-audio-dialog",
         safety_settings=safety_settings,
         generation_config=generation_config,
         system_instruction=system_instructions,)
@@ -242,4 +240,4 @@ if user_prompt:
             pass
 
     except Exception as e:
-        st.error("Hang tight! We're sorting out an issue. Please try again soon!")
+        st.error("Hang tight! We're sorting out an issue. Please try again soon!", {e})
