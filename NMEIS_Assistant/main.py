@@ -106,7 +106,7 @@ safety_settings = [
 try:
     gen_ai.configure(api_key=GOOGLE_API_KEY)
     model = gen_ai.GenerativeModel(
-        model_name="gemini-2.5-flash-native-audio-dialog",
+        model_name="gemini-2.5-flash",
         safety_settings=safety_settings,
         generation_config=generation_config,
         system_instruction=system_instructions,)
